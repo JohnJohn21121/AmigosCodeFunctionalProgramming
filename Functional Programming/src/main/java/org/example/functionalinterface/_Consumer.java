@@ -1,5 +1,6 @@
 package org.example.functionalinterface;
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class _Consumer {
@@ -8,17 +9,21 @@ public class _Consumer {
 
         greetCustomer(new Customer("Carlos", "12345678"));
         greetCustomerByConsumer.accept(new Customer("Juan", "12345678"));
+        greetCustomerByBiConsumer.accept(new Customer("Daniel", "12345678"), false);
     }
 
     static Consumer<Customer> greetCustomerByConsumer = customer -> System.out.println("Hello " + customer.getName() +
-            " , I hope you are doing fine, is your phone number still being " +
-            customer.getCustomerPhone() + "?");
+            " , your phone Number has been properly Registered " +
+            customer.getCustomerPhone());
+
+    static BiConsumer<Customer, Boolean> greetCustomerByBiConsumer = (customer, showPhoneNumber) -> System.out.println("Hello " + customer.getName() +
+            " , your phone Number has been properly Registered " +
+            (showPhoneNumber ? customer.getCustomerPhone() : "*****"));
 
     static void greetCustomer(Customer customer) {
-        String stringBuilder = "Hello " + customer.getName() +
-                " , I hope you are doing fine, is your phone number still being " +
-                customer.getCustomerPhone() + "?";
-        System.out.println(stringBuilder);
+        System.out.println("Hello " + customer.getName() +
+                " , your phone Number has been properly Registered " +
+                customer.getCustomerPhone());
     }
 
     static class Customer {
