@@ -2,7 +2,6 @@ package org.example.imperativa;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.example.imperativa.Imperative.Person.Gender.*;
 
@@ -28,7 +27,8 @@ public class Imperative {
         }
         //Forma Declarativa
         System.out.println("Forma Declarativa");
-        people.stream().filter(person -> FEMALE.equals(person.gender)).toList().forEach(System.out::println);
+        people.stream().filter(person -> FEMALE.equals(person.gender))
+                .toList().forEach(System.out::println);
 
     }
 
