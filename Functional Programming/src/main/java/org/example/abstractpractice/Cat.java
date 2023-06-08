@@ -2,11 +2,15 @@ package org.example.abstractpractice;
 
 public class Cat extends Animal implements AnimalBehaviour {
 
-    public Cat(String name, int age) {
-        super();
-        this.name = name;
-        this.age = age;
+    String foodOfPreference;
 
+    public String getFoodOfPreference() {
+        return foodOfPreference;
+    }
+
+    public Cat(String name, int age, String foodOfPreference) {
+        super(name,age);
+        this.foodOfPreference = foodOfPreference;
     }
 
     @Override
