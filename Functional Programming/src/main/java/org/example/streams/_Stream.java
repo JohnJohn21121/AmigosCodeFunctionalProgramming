@@ -1,11 +1,10 @@
-package org.example.abstractpractice.streams;
+package org.example.streams;
 
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
-import static org.example.abstractpractice.streams._Stream.Person.Gender.FEMALE;
-import static org.example.abstractpractice.streams._Stream.Person.Gender.MALE;
+import static org.example.streams._Stream.Person.Gender.FEMALE;
+import static org.example.streams._Stream.Person.Gender.MALE;
 
 
 public class _Stream {
@@ -41,7 +40,7 @@ public class _Stream {
         System.out.println("The list may contains only Females? " + mayContainOnlyFemales);
         boolean containsPreferNotToSay = people.stream()
                 .noneMatch(person -> FEMALE.equals(person.gender));
-        System.out.println("Does this list contains any prefer not to say?  " + containsPreferNotToSay);
+        System.out.println("Does this list contains any prefer not to say?   " + containsPreferNotToSay);
 
     }
 
