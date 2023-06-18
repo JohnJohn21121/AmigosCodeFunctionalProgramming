@@ -1,0 +1,7 @@
+Writing this to a File, which I think its a good practice perhaps, I should use a StringBuffer
+This is to show a way to add a new line.
+This line has been written in a different... line thanks to the newLine method
+John
+Anya
+Petrikov
+Alan
