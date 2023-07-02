@@ -2,7 +2,7 @@ package org.example.datastructures;
 
 import java.util.Arrays;
 
-public class TwoDimensionArray {
+public class WorkingWithTwoDimensionalArrays {
 
     public static void main(String[] args) {
         //Tic Tac Toe Example
