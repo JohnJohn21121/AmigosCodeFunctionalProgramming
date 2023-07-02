@@ -1,11 +1,11 @@
-package org.example.designpatternsfunctional;
+package org.example.functions.designpatternsfunctional;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.function.Function;
 
-import static org.example.designpatternsfunctional.CustomerRegistrationValidator.ValidationResult;
-import static org.example.designpatternsfunctional.CustomerRegistrationValidator.ValidationResult.*;
+import static org.example.functions.designpatternsfunctional.CustomerRegistrationValidator.ValidationResult;
+import static org.example.functions.designpatternsfunctional.CustomerRegistrationValidator.ValidationResult.*;
 
 public interface CustomerRegistrationValidator extends Function<Customer, ValidationResult> {
 

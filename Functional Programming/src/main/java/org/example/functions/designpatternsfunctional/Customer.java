@@ -1,4 +1,4 @@
-package org.example.designpatternsfunctional;
+package org.example.functions.designpatternsfunctional;
 
 import java.time.LocalDate;
 
