@@ -1,4 +1,4 @@
-package org.example.functionalinterface;
+package org.example.functions;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;

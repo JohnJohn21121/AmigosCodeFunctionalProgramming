@@ -1,9 +1,9 @@
-package org.example.imperativa;
+package org.example.functions.imperativa;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.example.imperativa.Imperative.Person.Gender.*;
+import static org.example.functions.imperativa.Imperative.Person.Gender.*;
 
 public class Imperative {
 

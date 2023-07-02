@@ -1,4 +1,4 @@
-package org.example.functionalinterface;
+package org.example.functions;
 
 import java.util.List;
 import java.util.function.Supplier;

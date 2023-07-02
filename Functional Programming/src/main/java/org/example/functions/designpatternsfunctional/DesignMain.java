@@ -1,8 +1,8 @@
-package org.example.designpatternsfunctional;
+package org.example.functions.designpatternsfunctional;
 
 import java.time.LocalDate;
 
-import static org.example.designpatternsfunctional.CustomerRegistrationValidator.*;
+import static org.example.functions.designpatternsfunctional.CustomerRegistrationValidator.*;
 
 public class DesignMain {
 

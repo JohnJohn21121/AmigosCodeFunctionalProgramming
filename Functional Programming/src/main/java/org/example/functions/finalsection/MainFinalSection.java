@@ -1,4 +1,4 @@
-package org.example.functionalinterface.finalsection;
+package org.example.functions.finalsection;
 
 import java.util.function.Consumer;
 

@@ -1,10 +1,10 @@
-package org.example.streams;
+package org.example.functions.streams;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static org.example.streams._Stream.Person.Gender.FEMALE;
-import static org.example.streams._Stream.Person.Gender.MALE;
+import static org.example.functions.streams._Stream.Person.Gender.FEMALE;
+import static org.example.functions.streams._Stream.Person.Gender.MALE;
 
 
 public class _Stream {
