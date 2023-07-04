@@ -1,3 +1,5 @@
+import math
+
 name = 'Erlich Bachman'
 user_id = 16180339887
 progress = 0.75
@@ -16,3 +18,11 @@ print('-----------------')
 username = input('Enter your name: ')
 
 print('Hi '+ username+ ', you are doing this on python')
+print('-----------------')
+# Hypotenuse
+a = int(input('Enter the first value for the triangle: '))
+b = int(input('Enter the second value for the triangle: '))
+
+c =math.sqrt(a**2 + b**2)
+print(c)
+
