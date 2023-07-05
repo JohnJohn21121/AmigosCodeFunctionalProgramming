@@ -19,6 +19,7 @@ public class Main {
                 .ifPresentOrElse(email -> System.out.println("Sending email to " + email), () -> {
                     System.out.println("cannot Send Email");
                 });
+        System.out.println("-------------------------------------------------------");
         Optional.ofNullable(null)
                 //usage of ifPresentOrelse to properly point that we need to pass as a second action a runnable.
                 .ifPresentOrElse(email -> System.out.println("Sending email to " + email), () -> {
