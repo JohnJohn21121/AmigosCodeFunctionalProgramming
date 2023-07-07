@@ -2,9 +2,21 @@ package org.example.datastructures;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class WorkingWithMaps {
+
     public static void main(String[] args) {
+
+        Map<Person, Food> favoriteFoods = new HashMap<>();
+        favoriteFoods.put(new Person("John"), new Food("Pizza"));
+        //This example was used to show the importance of the Hascode (records don't need hashcode)
+        System.out.println(favoriteFoods.get(new Person("John")));
+        System.out.println(favoriteFoods.get(new Person("John").hashCode()));
+        System.out.println(new Person("John").hashCode());
+    }
+
+    public static void mapsPractice() {
 
         Map<Integer, Person> persons = new HashMap<>();
         persons.put(1, new Person("John"));
@@ -29,7 +41,34 @@ public class WorkingWithMaps {
         });
     }
 
-    record Person(String name) {
+    static class Person {
+        String name;
 
+        public Person(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "name='" + name + '\'' +
+                    '}';
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof Person person)) return false;
+
+            return Objects.equals(name, person.name);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(name);
+        }
+    }
+
+    record Food(String dish) {
     }
 }
