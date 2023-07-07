@@ -12,12 +12,12 @@ public class WorkingWithQueues {
         linkedList.add(new Person("Gabriel", 23));
         ListIterator<Person> personListIterator = linkedList.listIterator();
         System.out.println("Regular Order ");
-        while (personListIterator.hasNext()){
-            System.out.println( personListIterator.next());
+        while (personListIterator.hasNext()) {
+            System.out.println(personListIterator.next());
         }
         System.out.println("Backwards ");
-        while (personListIterator.hasPrevious()){
-            System.out.println( personListIterator.previous());
+        while (personListIterator.hasPrevious()) {
+            System.out.println(personListIterator.previous());
         }
         queues();
 
@@ -25,7 +25,7 @@ public class WorkingWithQueues {
 
     public static void queues() {
 
-        Queue<Person> superMarketCustomer= new LinkedList<>();
+        Queue<Person> superMarketCustomer = new LinkedList<>();
         superMarketCustomer.add(new Person("John", 24));
         superMarketCustomer.add(new Person("Daniel", 23));
         superMarketCustomer.add(new Person("Aida", 24));
@@ -38,10 +38,10 @@ public class WorkingWithQueues {
         System.out.println(superMarketCustomer.size());
         System.out.println(superMarketCustomer.peek());
         //Pretty similar to add but it is used for cases where we are using a capacity restriction.
-        superMarketCustomer.offer(new Person("Gabriel",24));
+        superMarketCustomer.offer(new Person("Gabriel", 24));
     }
 
-    static record Person(String name, int age){
+    static record Person(String name, int age) {
 
     }
 
