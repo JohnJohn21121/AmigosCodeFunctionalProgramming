@@ -16,10 +16,10 @@ public class WorkingWithTwoDimensionalArrays {
         board[0][1] = '0';
         board[0][2] = '0';
 
-        char[][] boardTwo = new char[][] {
-                new char[]{'0','0','0'},
-                new char[]{'-','-','-'},
-                new char[]{'-','-','-'}
+        char[][] boardTwo = new char[][]{
+                new char[]{'0', '0', '0'},
+                new char[]{'-', '-', '-'},
+                new char[]{'-', '-', '-'}
         };
 
         System.out.println(Arrays.deepToString(board));
